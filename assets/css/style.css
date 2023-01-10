@@ -1,80 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
+  --primary-color: rgb(20, 20, 20);
   --primary-color-darker: rgb(9, 48, 56);
 }
 
 * {
   box-sizing: border-box;
   outline: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
 .container {
   max-width: 640px;
-  margin: 50px auto;
-  background: #fff;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;  
+  color: #fff;
 }
 
-.container .info {  
-  display: flex;  
-  justify-content: space-between;  
+.container h1 {
+  margin-bottom: 1em;
 }
 
-.container .info .imc p{
-  font-size: 12px;
+.container .relogio {
+  margin-bottom: 0.5em;
 }
 
-
-form input, form label, form button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px; 
+.container button {
+  background-color: rgb(75, 75, 75);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  color: #fff;
 }
 
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
+.container .iniciar:hover {
+  background-color: green;
 }
 
-form input:focus {
-  outline: 1px solid var(--primary-color);
+.container .pausar:hover {
+  background-color: red;
 }
+
+.container .zerar:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
 
 .relogio {
   display: flex;
   align-items: center;
-  font-size: 3em;   
-  margin: 25px 0;
+  font-size: 3em;
 }
 
-.relogio p{
-  margin: 0;
+.relogio p {
+  margin: 10px 0;
+  font-size: 90px;
 }
 
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
+@media only screen and (max-width:400px) {
+  .relogio p {
+    font-size: 60px;
+  }
 }

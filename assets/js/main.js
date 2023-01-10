@@ -58,7 +58,7 @@ pausar.addEventListener("click", function (e) {
   clearInterval(tempo);
 });
 zerar.addEventListener("click", function (e) {
-  relogio.style.color = "black";
+  relogio.style.color = "white";
   clearInterval(tempo);
   segundosTimer = 0;
   minutosTimer = 0;
